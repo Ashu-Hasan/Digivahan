@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="colorPrimary">#FDBB4C</color>
+    <color name="colorPrimaryDark">#C78C28</color>
+    <color name="colorAccent">#FF5722</color>
+
+    <!-- Widget / controls -->
+    <color name="widgetColor">#03A9F4</color>
+
+    <!-- Action bar -->
+    <color name="actionBarColor">#FDBB4C</color>
+
+    <!-- Status bar -->
+    <color name="statusBarColor">#C78C28</color>
+
+    <!-- Default text/background -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

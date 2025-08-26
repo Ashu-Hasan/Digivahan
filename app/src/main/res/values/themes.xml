@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base theme, Day only -->
+    <style name="Theme.Digivahan" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Core colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/widgetColor</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status & Navigation bars -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item> <!-- dark icons -->
+
+        <!-- Action Bar (if using Toolbar, apply manually) -->
+        <item name="actionBarTheme">@style/ActionBarTheme.Digivahan</item>
+    </style>
+
+    <!-- Action Bar style -->
+    <style name="ActionBarTheme.Digivahan" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="android:background">@color/actionBarColor</item>
+        <item name="titleTextStyle">@style/ActionBarTitleText</item>
+    </style>
+
+    <style name="ActionBarTitleText" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+
+</resources>
