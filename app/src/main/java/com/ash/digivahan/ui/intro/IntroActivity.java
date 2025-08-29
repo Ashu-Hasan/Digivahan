@@ -59,15 +59,19 @@ public class IntroActivity extends AppCompatActivity {
             if (currentIndex < introList.size() - 1) {
                 currentIndex++;
                 setIntroPage(currentIndex);
+                if (currentIndex == introList.size() - 1){
+                    binding.btnSkip.setVisibility(View.GONE);
+                }
             } else {
                 // Finished intro → go to Login/Main
-//                prefs.setBoolean(PreferencesManager.KEY_FIRST_LAUNCH, false);
+                prefs.setBoolean(PreferencesManager.KEY_FIRST_LAUNCH, false);
                 startActivity(new Intent(this, LoginActivity.class));
                 finish();
             }
         });
 
         binding.btnSkip.setOnClickListener(v -> {
+            prefs.setBoolean(PreferencesManager.KEY_FIRST_LAUNCH, false);
             startActivity(new Intent(this, LoginActivity.class));
             finish();
         });

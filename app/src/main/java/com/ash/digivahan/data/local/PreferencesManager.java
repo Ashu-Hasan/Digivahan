@@ -8,7 +8,7 @@ public class PreferencesManager {
     private static final String PREF_NAME = "digivahan_prefs";
     private static final String KEY_USER_ID = "user_id";
     private static final String KEY_AUTH_TOKEN = "auth_token";
-    private static final String KEY_IS_LOGGED_IN = "is_logged_in";
+    public static final String KEY_IS_LOGGED_IN = "is_logged_in";
     public static final String KEY_FIRST_LAUNCH = "is_first_launch";
 
 
