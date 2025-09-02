@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    tools:context=".ui.Activities.deliveryAddress.AddEditDeliveryAddress">
+
+    <!-- Toolbar -->
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar"/>
+
+    <!-- ScrollView for inputs -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/toolbarLayout"
+        app:layout_constraintBottom_toTopOf="@id/btnSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- First Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="8dp"
+                android:background="@drawable/bg_card">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Name*"
+                    android:text="Pankaj Qureshi"
+                    android:background="@drawable/edit_text_bg2"
+                    android:padding="12dp"
+                    android:drawableEnd="@drawable/ic_check" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Contact No*"
+                    android:text="+91 9897000001"
+                    android:background="@drawable/edit_text_bg2"
+                    android:padding="12dp"
+                    android:drawableEnd="@drawable/ic_check" />
+            </LinearLayout>
+
+            <!-- Second Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@drawable/bg_card"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="House no. / Building Name*"
+                    android:text="Pankaj Qureshi"
+                    android:background="@drawable/edit_text_bg2"
+                    android:padding="12dp"
+                    android:drawableEnd="@drawable/ic_check" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Road Name / Area / Colony*"
+                    android:text="Pankaj Qureshi"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_bg2"
+                    android:padding="12dp"
+                    android:drawableEnd="@drawable/ic_check" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pin code*"
+                    android:text="Pankaj Qureshi"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_bg2"
+                    android:padding="12dp"
+                    android:drawableEnd="@drawable/ic_check" />
+
+                <!-- City + State -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="8dp">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="City*"
+                        android:text="New Delhi"
+                        android:background="@drawable/edit_text_bg2"
+                        android:padding="12dp"
+                        android:drawableEnd="@drawable/ic_check" />
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="State*"
+                        android:text="Delhi"
+                        android:background="@drawable/edit_text_bg2"
+                        android:padding="12dp"
+                        android:drawableEnd="@drawable/ic_check" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#F2B742"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -53,6 +53,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.navigation.runtime)
+    implementation(libs.navigation.fragment)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
@@ -125,5 +127,8 @@ dependencies {
     annotationProcessor("androidx.room:room-compiler:2.6.1")
 
     implementation("de.hdodenhof:circleimageview:3.1.0")
+
+    implementation("androidx.navigation:navigation-fragment:2.7.7")
+    implementation("androidx.navigation:navigation-ui:2.7.7")
 
 }

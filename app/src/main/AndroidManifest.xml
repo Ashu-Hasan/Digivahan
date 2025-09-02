@@ -15,18 +15,97 @@
         android:theme="@style/Theme.Digivahan"
         tools:targetApi="31">
         <activity
-            android:name=".ui.verification.VerifyPhoneEmailActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".ui.forgotPassword.ForgotPasswordActivity"
-            android:exported="true"/>
-
-        <activity
-            android:name=".ui.intro.IntroActivity"
+            android:name=".ui.Activities.garage.VehicleInformation"
             android:exported="false" />
-
         <activity
-            android:name=".ui.splash.SplashScreen"
+            android:name=".ui.Activities.garage.MyGarageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.infoPages.PrivacyPolicyPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.infoPages.TermsConditionPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.infoPages.AboutUsPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.changPassword.ChangePasswordPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.primaryDetails.SetPrimaryContactPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.deliveryAddress.SetDefaultAddressPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.primaryDetails.PrimaryOptionsPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.emergencyContacts.EditEmergencyContacts"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.emergencyContacts.EmergencyContacts"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.profile.UpdateDeliveryAddress"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.profile.UpdatePublicDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.profile.UpdateBasicDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.qr.VirtualQR"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.invoice.DownloadInvoice"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.orderDetails.MyOrderFullDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.review.ShareReviewPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.qr.ByNewQR"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.orderDetails.TrackOrderPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.orderDetails.MyOrderDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.orderDetails.OrderListPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.deliveryAddress.AddEditDeliveryAddress"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.orderDetails.OrderDetailsPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.documentVault.DocumentVaultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.notification.NotificationPage"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.verification.VerifyPhoneEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.forgotPassword.ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.Activities.intro.IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Activities.splash.SplashScreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
@@ -35,12 +114,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name=".ui.auth.LoginActivity"
+            android:name=".ui.Activities.auth.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.Activities.MainActivity"
             android:exported="false" />
     </application>
 

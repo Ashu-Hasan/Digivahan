@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ash.digivahan.ui.Fragments.QRHomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_q_r_home" />
+
+    <!--<fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.jobplan.jobplanprovider.Fragments.Dashboard"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_jobs"
+        android:name="com.jobplan.jobplanprovider.Fragments.Jobs"
+        android:label="@string/jobs"
+        tools:layout="@layout/fragment_jobs" />
+
+    <fragment
+        android:id="@+id/nav_applied_users"
+        android:name="com.jobplan.jobplanprovider.Fragments.AppliedUsers"
+        android:label="@string/applied_users"
+        tools:layout="@layout/fragment_applied_users" />
+
+    <fragment
+        android:id="@+id/nav_subscription"
+        android:name="com.jobplan.jobplanprovider.Fragments.Subscription"
+        android:label="@string/subscription"
+        tools:layout="@layout/fragment_subscription" />
+
+    <fragment
+        android:id="@+id/nav_subscription_plan"
+        android:name="com.jobplan.jobplanprovider.Fragments.SubscriptionPlan"
+        android:label="@string/subscription_plan"
+        tools:layout="@layout/fragment_subscription_plan" />
+
+    <fragment
+        android:id="@+id/nav_purchase_history"
+        android:name="com.jobplan.jobplanprovider.Fragments.PurchaseHistory"
+        android:label="@string/purchase_history"
+        tools:layout="@layout/fragment_purchase_history" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.jobplan.jobplanprovider.Fragments.Profile"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.jobplan.jobplanprovider.Fragments.Notifications"
+        android:label="@string/notification"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/nav_job_post"
+        android:name="com.jobplan.jobplanprovider.Fragments.JobPost"
+        android:label="@string/job_post"
+        tools:layout="@layout/fragment_job_post" />
+
+    <fragment
+        android:id="@+id/help"
+        android:name="com.jobplan.jobplanprovider.Fragments.Help"
+        android:label="@string/help"
+        tools:layout="@layout/fragment_help" />-->
+</navigation>

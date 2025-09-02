@@ -1,0 +1,33 @@
+<!-- res/menu/bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/profile_icon1"
+        android:visible="false"
+        android:checked="false"/>
+
+    <item
+        android:id="@+id/nav_jobs"
+        android:icon="@drawable/profile_icon1"
+        android:checked="false"
+        android:title="jobs" />
+
+    <item
+        android:id="@+id/nav_job_post"
+        android:icon="@drawable/profile_icon1"
+        android:checked="false"
+        android:title="job_post" />
+
+    <item
+        android:id="@+id/nav_subscription_plan"
+        android:icon="@drawable/profile_icon1"
+        android:checked="false"
+        android:title="subscription" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile_icon1"
+        android:checked="false"
+        android:title="profile" />
+
+</menu>

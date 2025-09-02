@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Toolbar -->
+        <include
+            android:id="@+id/toolbarLayout"
+            layout="@layout/toolbar"/>
+
+        <!-- Security Logo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="32dp"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/document_vault_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Security Code"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- OTP Boxes -->
+
+            <com.ash.digivahan.other.OtpView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:otpLength="4"
+                app:boxWidth="40dp"
+                app:boxHeight="40dp"
+                app:boxSpacing="5dp"
+                android:visibility="visible"
+                app:textSize="5sp"
+                app:boxElevation="1dp"
+                app:textColor="@android:color/black"
+                app:boxBackground="@drawable/otp_box_bg1" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="Please share your security code only with trusted requesters.\nYour safety and security are our top priority."
+                android:textAlignment="center"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Primary" />
+
+        <!-- Card Items -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp">
+
+            <!-- Insurance -->
+            <include layout="@layout/item_document"
+                android:id="@+id/itemInsurance"
+                android:tag="Insurance" />
+
+            <!-- Pollution -->
+            <include layout="@layout/item_document"
+                android:id="@+id/itemPollution"
+                android:tag="Pollution" />
+
+            <!-- Registration -->
+            <include layout="@layout/item_document"
+                android:id="@+id/itemRegistration"
+                android:tag="Registration Certificate"/>
+
+            <!-- Other Docs -->
+            <include layout="@layout/item_document"
+                android:id="@+id/itemOtherDocs"
+                android:tag="Other Documents"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

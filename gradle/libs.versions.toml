@@ -30,6 +30,8 @@ ssp = "1.1.1"
 firebaseCrashlyticsBuildtools = "3.0.2"
 materialdatetimepicker = "2.3.0"
 volley = "1.2.1"
+navigationRuntime = "2.9.3"
+navigationUiVersion = "2.9.3"
 
 
 [libraries]
@@ -63,6 +65,8 @@ ssp = { group = "com.intuit.ssp", name = "ssp-android", version.ref = "ssp" }
 wdullaer = { group = "com.wdullaer", name = "materialdatetimepicker", version.ref = "materialdatetimepicker" }
 firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
 volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
+navigation-runtime = { group = "androidx.navigation", name = "navigation-runtime", version.ref = "navigationRuntime" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUiVersion" }
 
 
 [plugins]

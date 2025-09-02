@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Digivahan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!--    Nav_view items-->
+    <string name="nav_notification">Notification</string>
+    <string name="nav_my_order">My Order</string>
+    <string name="nav_virtual_qrs">My Virtual QRs</string>
+    <string name="nav_update_profile">Update Profile</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_term_condition">Terms &amp; Conditions</string>
+    <string name="nav_privacy_policy">Privacy &amp; Policy </string>
+
+
+    <string-array name="sizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
 </resources>

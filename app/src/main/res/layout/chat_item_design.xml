@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        android:id="@+id/receiverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Profile -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivReceiverProfile"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="6dp"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_icon1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/bg_receiver_bubble"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/tvReceiverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jhon Abraham"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- Message -->
+            <TextView
+                android:id="@+id/tvReceiverMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Accident Alert 🚨"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <!-- Time -->
+            <TextView
+                android:id="@+id/tvReceiverTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="end"
+                android:text="09:25 AM"
+                android:textColor="#666"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/senderLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_sender_bubble"
+        android:layout_gravity="end"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginStart="50dp">
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tvSenderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+        <!-- Message -->
+        <TextView
+            android:id="@+id/tvSenderMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, this is a sender message"
+            android:textColor="#000"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"/>
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/tvSenderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09:25 AM"
+            android:textSize="10sp"
+            android:gravity="end"
+            android:textColor="#666"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</LinearLayout>

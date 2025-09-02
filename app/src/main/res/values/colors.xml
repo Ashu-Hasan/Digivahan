@@ -9,10 +9,10 @@
     <color name="widgetColor">#FDBB4C</color>
 
     <!-- Action bar -->
-    <color name="actionBarColor">#FDBB4C</color>
+    <color name="actionBarColor">#FFFFFF</color>
 
     <!-- Status bar -->
-    <color name="statusBarColor">#C78C28</color>
+    <color name="statusBarColor">#FFFFFF</color>
 
     <!-- Figma Color Code -->
     <color name="Primary">#fdbb4c</color>

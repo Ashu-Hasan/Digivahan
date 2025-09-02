@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Julfikar Tiwari"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:id="@+id/rbSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P - A 3rd floor Cyber Tech, Opposit Kaliyan Jewellers, Dehradun, Uttarakhand, 247667"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/tvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 9897000001"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        android:layout_marginTop="2dp"/>
+
+    <!-- Edit + Deliver Button -->
+    <Button
+        android:id="@+id/btnDeliver"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Deliver to this Address"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FBC02D"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

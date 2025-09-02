@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <include
+        android:id="@+id/toolbarLayout"
+        layout="@layout/toolbar"/>
+
+
+    <!-- Vehicle & PUC Expired Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#FFCCCC">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/ivCar"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/profile_icon1"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tvCarNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KA 18 EQ 0001"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_below="@id/ivCar"
+                android:layout_marginTop="6dp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PUC EXPIRED"
+                    android:textColor="@color/text_heading"
+                    android:background="@drawable/bg_card"
+                    android:padding="6dp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="on 13-Oct-2021"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:layout_marginTop="6dp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go to My Garage"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_marginTop="6dp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Current Fuel Prices -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_card"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Fuel Prices in Delhi"
+            android:textColor="@color/text_heading"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <!-- Scroll Section -->
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+            &lt;!&ndash; Insurance, PUC, Fitness Status &ndash;&gt;
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                &lt;!&ndash; Insurance Card &ndash;&gt;
+                <include layout="@layout/item_insurance_card"/>
+                &lt;!&ndash; PUC Card &ndash;&gt;
+                <include layout="@layout/item_puc_card"/>
+                &lt;!&ndash; Fitness Card &ndash;&gt;
+                <include layout="@layout/item_fitness_card"/>
+            </LinearLayout>
+
+            &lt;!&ndash; Trending Cars &ndash;&gt;
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending new cars"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                tools:ignore="HardcodedText" />
+
+            &lt;!&ndash;<HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    &lt;!&ndash; Sample Car Item &ndash;&gt;
+                    <include layout="@layout/item_car_trending"/>
+                    <include layout="@layout/item_car_trending"/>
+                    <include layout="@layout/item_car_trending"/>
+                </LinearLayout>
+            </HorizontalScrollView>&ndash;&gt;
+
+            &lt;!&ndash; More sections: comparison, tips, news etc. &ndash;&gt;
+            &lt;!&ndash;<include layout="@layout/item_comparison"/>
+            <include layout="@layout/item_tips"/>
+            <include layout="@layout/item_news"/>&ndash;&gt;
+        </LinearLayout>
+    </ScrollView>-->
+
+</LinearLayout>
